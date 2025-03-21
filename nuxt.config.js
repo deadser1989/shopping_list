@@ -1,5 +1,5 @@
 export default {
-    target: 'static',
+    target: 'server',
     router: { 
       base: '/shopping_list/'
     },
