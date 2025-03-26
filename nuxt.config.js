@@ -1,10 +1,7 @@
-export default {
-  target: 'server',
-
-  router: { 
-    base: '/shopping_list/'
+export default defineNuxtConfig({
+  ssr: false, 
+  app: {
+    baseURL: '/shopping_list/', 
   },
-
-  compatibilityDate: '2025-03-26',
-  modules: ['@pinia/nuxt']
-};
+  modules: ['@pinia/nuxt'],
+});
