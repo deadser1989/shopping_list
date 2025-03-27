@@ -1,4 +1,8 @@
 <template>
+  <div>
+		<slot />
+	</div>
+
   <div class="container">
     <h1>Мой список покупок</h1>
     <p v-if="userName"> {{ userName }}!</p>
@@ -64,6 +68,7 @@ onMounted(() => {
       console.log("Theme Params:", themeParams);
       if (themeParams.bg_color) {
           document.body.style.backgroundColor = themeParams.bg_color;
+          console.log(document.body.style.backgroundColor);
       }
     } else {
       console.warn('Не удалось получить информацию о пользователе.');
@@ -82,6 +87,7 @@ onMounted(() => {
 </script>
 
 <style scoped>
+
 .container {
   max-width: 600px;
   margin: 0 auto;
@@ -101,6 +107,10 @@ onMounted(() => {
 
 label {
   margin-bottom: 5px;
+}
+
+body {
+  background-color: #ff6bfa !important;
 }
 
 input {

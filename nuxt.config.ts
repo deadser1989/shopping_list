@@ -1,5 +1,7 @@
 export default defineNuxtConfig({
   compatibilityDate: '2024-11-01',
   devtools: { enabled: true },
-  output: { publicPath: './' }  
+  app: {
+    baseURL: '/shopping_list/' 
+  }
 })
