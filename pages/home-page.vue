@@ -1,6 +1,5 @@
 <template>
   <div class="container">
-    <!-- Кнопка домой с иконкой из lucide -->
     <button @click="goHome" class="home-btn">
       <Home :size="30" />
     </button>
@@ -8,7 +7,7 @@
     <h1 class="title animate__animated animate__bounce">ВАШИ СПИСКИ ПОКУПОК</h1>
 
     <div class="list-wrapper">
-      <!-- Отображаем все списки -->
+
       <div
         v-for="list in shoppingLists"
         :key="list.id"
@@ -35,18 +34,17 @@
           @click="deleteList(list.id)"
           class="delete-btn"
         >
-          <X :size="20" /> <!-- Используем крестик из lucide -->
+          <X :size="20" /> <
         </button>
       </div>
     </div>
 
     <div class="buttons-container">
-      <!-- Кнопка редактирования, заменяем значок на карандаш из lucide -->
       <button 
         :class="{'edit-btn-active': editMode, 'edit-btn': !editMode}" 
         @click="toggleEditMode"
       >
-        <Edit2 :size="32" /> <!-- Используем карандаш из lucide -->
+        <Edit2 :size="32" /> 
       </button>
       <button @click="createNewList" class="create-btn">
         <span class="plus">+</span>
@@ -58,7 +56,7 @@
 <script setup>
 import { ref, onMounted } from 'vue';
 import { useRouter } from 'vue-router';
-import { Home, Edit2, X } from 'lucide-vue-next'; // Импортируем нужные иконки
+import { Home, Edit2, X } from 'lucide-vue-next'; 
 
 const router = useRouter();
 const shoppingLists = ref([]);
@@ -113,7 +111,6 @@ const goHome = () => {
 </script>
 
 <style scoped>
-/* Применяем градиент на всю страницу */
 body {
   background: linear-gradient(to bottom right, #005a78, #4f0080);
   font-family: 'Roboto', 'Open Sans', 'Montserrat', 'PT Sans', sans-serif;
@@ -131,7 +128,7 @@ body {
   padding: 40px;
   text-align: center;
   border-radius: 15px;
-  background-color: transparent; /* Убираем фон у контейнера */
+  background-color: transparent; 
 }
 
 /* Кнопка домой с иконкой из lucide */
@@ -268,8 +265,8 @@ body {
 .delete-btn {
   position: absolute;
   right: 10px;
-  top: 50%;  /* Сделаем кнопку по центру */
-  transform: translateY(-50%); /* Чтобы она была точно по центру */
+  top: 50%; 
+  transform: translateY(-50%); 
   background-color: red;
   color: white;
   border: none;
