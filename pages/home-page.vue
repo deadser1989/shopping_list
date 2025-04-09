@@ -34,7 +34,7 @@
           @click="deleteList(list.id)"
           class="delete-btn"
         >
-          <X :size="20" /> <
+          <X :size="30" /> 
         </button>
       </div>
     </div>
