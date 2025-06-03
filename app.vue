@@ -40,8 +40,8 @@ html, body {
 /* Фон страницы с градиентом, растягивающийся на весь экран */
 .background {
   min-height: 100vh;
-  background: linear-gradient(135deg, #005a78, #4f0080); /* Градиент для всей страницы */
-  background-size: cover; /* Растягиваем градиент на весь экран */
+  background: linear-gradient(135deg, #005a78, #4f0080);
+  background-size: cover; /* градиент на весь экран */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -50,7 +50,6 @@ html, body {
   overflow-x: hidden;
 }
 
-/* Контейнер без фона - полностью прозрачный */
 .container {
   max-width: 700px;
   width: 100%;

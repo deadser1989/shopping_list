@@ -110,12 +110,11 @@ onMounted(() => {
     items.value = currentList.items || [];
   }
 
-  users.value = ['Иван', 'Мария']; // Заглушка
+  users.value = ['Иван', 'Мария']; 
 });
 </script>
 
 <style scoped>
-/* Контейнер с прозрачным фоном, чтобы был виден глобальный фон */
 .container {
   padding: 20px;
   min-height: 100vh;
@@ -125,7 +124,7 @@ onMounted(() => {
   padding-bottom: 100px;
 }
 
-/* Заголовок */
+
 .title {
   font-size: 32px;
   margin-bottom: 20px;

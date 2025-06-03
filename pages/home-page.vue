@@ -28,7 +28,7 @@
           🛒 {{ list.name }}
         </span>
 
-        <!-- Кнопка для удаления списка (появляется в режиме редактирования) -->
+        <!-- Кнопка для удаления списка  -->
         <button
           v-if="editMode"
           @click="deleteList(list.id)"
@@ -60,7 +60,7 @@ import { Home, Edit2, X } from 'lucide-vue-next';
 
 const router = useRouter();
 const shoppingLists = ref([]);
-const editMode = ref(false);  // Режим редактирования
+const editMode = ref(false);  
 const editingListId = ref(null);  // ID редактируемого списка
 
 onMounted(() => {
@@ -121,7 +121,6 @@ body {
   align-items: center;
 }
 
-/* Контейнер для контента */
 .container {
   max-width: 600px;
   margin: 100px auto;
@@ -131,7 +130,7 @@ body {
   background-color: transparent; 
 }
 
-/* Кнопка домой с иконкой из lucide */
+/* Кнопка домой */
 .home-btn {
   position: absolute;
   top: 20px;
@@ -170,7 +169,7 @@ body {
 .list-wrapper {
   display: flex;
   flex-direction: column;
-  align-items: center; /* Выравнивание списка по центру */
+  align-items: center; 
   margin-top: 20px;
 }
 

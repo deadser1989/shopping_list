@@ -3,7 +3,6 @@
     <h1 class="title animate__animated animate__bounce">ВАШ ЛИСТ ДЛЯ ПОКУПОК</h1>
     <p class="mini-app-text">Это Telegram Mini App для списка покупок</p>
 
-    <!-- Картинка с тенью по контуру -->
     <img src="/images/shopping-cart.png" alt="Корзина покупок" class="plain-image" />
   </div>
 
@@ -35,14 +34,13 @@ import 'animate.css';
   text-shadow: 5px 5px 10px rgba(48, 0, 38, 0.247);
 }
 
-/* Картинка с тенью по контуру */
 .plain-image {
   max-width: 260px;
   width: 100%;
   height: auto;
   display: block;
   margin: 75px auto;
-  filter: drop-shadow(0 9px 16px rgb(4, 19, 64)); /* Тень по контуру изображения */
+  filter: drop-shadow(0 9px 16px rgb(4, 19, 64)); 
 }
 
 body {
